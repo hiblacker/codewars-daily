@@ -74,7 +74,8 @@ console.log(perimeterInOne(30)); // 14098308
 ```
 
 # Codewars精选解
-成功提交自己的答案后，可以浏览别人的解，有最佳实践和最骚解（clever）
+成功提交自己的答案后，可以浏览别人的解，有最佳实践和最骚解（clever）。
+我选了一个有意思的：
 ```js
 const SQRT5 = Math.sqrt(5); // 
 const PHI = (SQRT5 + 1) / 2;
@@ -85,7 +86,7 @@ const perimeter = n => 4 * fib(n + 3) - 4;
 
 查了一下，果然，根据通项公式得到前n项和的公式，然后乘以4就是本题的解了。
 
-感兴趣可以自行搜索斐波那契数列。
+感兴趣可以自行[谷歌](https://www.google.com/?q=斐波那契数列) 或者 [百度](https://www.baidu.com/s?wd=斐波那契数列)斐波那契数列。
 
 # 本题相关知识
 1. [Array.prototype.fill()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill)
