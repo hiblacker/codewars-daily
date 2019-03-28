@@ -9,9 +9,9 @@ Codewars让学习编程变得非常有趣，参照游戏设计理念，他们提
 # How these articles work
 1. 题干描述部分
 2. 问题拆解
-3. 我的解
-4. 精选codewar最佳实践和最骚解(clever)
-5. 解题中涉及到的知识点
+3. 我的解题思路
+4. Codewars精选解
+5. 相关知识
 
 # 今日份Codewar
 - 【5sku】原题：Perimeter of squares in a rectangle
