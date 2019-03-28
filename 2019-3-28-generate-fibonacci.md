@@ -50,27 +50,26 @@ function perimeter(n){
  *
  * Array(n + 1)  是为了循环n+1次
  * fill(1)  是因为空数组reduce会不循环
+ * 第一次 reduce ：将数组最后两项的和放入数组最后
+ * 第二次 reduce ：求周长
  * 
  */
-const perimeterInOne = n => Array(n + 1).fill(1).reduce(arr => [...arr, (arr[arr.length - 1] || 1) + (arr[arr.length - 2] || 0)], []).reduce((sum, cur) => sum + cur) * 4
+const perimeterInOne = n => Array(n + 1)
+                                .fill(1)
+                                .reduce(arr => [...arr, (arr[arr.length - 1] || 1) + (arr[arr.length - 2] || 0)], [])
+                                .reduce((sum, cur) => sum + cur) * 4
 ```
 
 4. 测试
 ```js 
 console.log(perimeter(0)); // 4
 console.log(perimeter(1)); // 8
-console.log(perimeter(2)); // 16
 console.log(perimeter(5)); // 80
-console.log(perimeter(7)); // 216
 console.log(perimeter(20)); // 114624
-console.log(perimeter(30)); // 14098308
 console.log(perimeterInOne(0)); // 4
 console.log(perimeterInOne(1)); // 8
-console.log(perimeterInOne(2)); // 16
 console.log(perimeterInOne(5)); // 80
-console.log(perimeterInOne(7)); // 216
 console.log(perimeterInOne(20)); // 114624
-console.log(perimeterInOne(30)); // 14098308
 ```
 
 # Codewars精选解

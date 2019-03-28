@@ -25,7 +25,10 @@ function perimeter(n) {
  * 一行代码版
  * 
  */
-const perimeterInOne = n => Array(n + 1).fill(1).reduce(arr => [...arr, (arr[arr.length - 1] || 1) + (arr[arr.length - 2] || 0)], []).reduce((a, b) => a + b) * 4
+const perimeterInOne = n => Array(n + 1)
+                                .fill(1)
+                                .reduce(arr => [...arr, (arr[arr.length - 1] || 1) + (arr[arr.length - 2] || 0)], [])
+                                .reduce((a, b) => a + b) * 4
 
 console.log(perimeter(0));
 console.log(perimeter(1));
