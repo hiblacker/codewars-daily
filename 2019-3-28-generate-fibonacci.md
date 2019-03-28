@@ -1,4 +1,4 @@
-# 【5sku】题目：Perimeter of squares in a rectangle  
+# Codewars刷题升级 - 【生成斐波那契数列】- 5sku - Perimeter of squares in a rectangle  
 The drawing shows 6 squares the sides of which have a length of 1, 1, 2, 3, 5, 8. It's easy to see that the sum of the perimeters of these squares is : `4 * (1 + 1 + 2 + 3 + 5 + 8) = 4 * 20 = 80`
 
 Could you give the sum of the perimeters of all the squares in a rectangle when there are n + 1 squares disposed in the same manner as in the drawing:
@@ -54,10 +54,12 @@ function perimeter(n){
  * 第二次 reduce ：求周长
  * 
  */
-const perimeterInOne = n => Array(n + 1)
-                                .fill(1)
-                                .reduce(arr => [...arr, (arr[arr.length - 1] || 1) + (arr[arr.length - 2] || 0)], [])
-                                .reduce((sum, cur) => sum + cur) * 4
+function perimeterInOne(n){
+    return Array(n + 1)
+            .fill(1)
+            .reduce(arr => [...arr, (arr[arr.length - 1] || 1) + (arr[arr.length - 2] || 0)], [])
+            .reduce((sum, cur) => sum + cur) * 4
+}
 ```
 
 4. 测试
@@ -76,10 +78,12 @@ console.log(perimeterInOne(20)); // 114624
 成功提交自己的答案后，可以浏览别人的解，有最佳实践和最骚解（clever）。
 我选了一个有意思的：
 ```js
-const SQRT5 = Math.sqrt(5); // 
-const PHI = (SQRT5 + 1) / 2;
-const fib = n => Math.round(PHI**n / SQRT5);
-const perimeter = n => 4 * fib(n + 3) - 4;
+function perimeter(n){
+    const SQRT5 = Math.sqrt(5); 
+    const PHI = (SQRT5 + 1) / 2;
+    const fib = n => Math.round(PHI**n / SQRT5);
+    const perimeter = n => 4 * fib(n + 3) - 4;
+}
 ```
 看到的第一眼我是崩溃的，这TM是啥？平复了一下心情后我想了一下，这应该是用到数学知识了。
 
@@ -90,5 +94,9 @@ const perimeter = n => 4 * fib(n + 3) - 4;
 # 本题相关知识
 1. [Array.prototype.fill()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill)
 2. [Array.prototype.reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
-3. [箭头函数](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+3. [`=>` 箭头函数](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 4. [`...` 拓展运算符](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
+
+[欢迎star](https://github.com/hiblacker/codewars-daily)
+
+(完)
