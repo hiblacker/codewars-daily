@@ -26,7 +26,7 @@ Codewars让学习编程变得非常有趣，参照游戏设计理念，他们提
 5. 相关知识
 
 # 今日份Codewar
-- 5sku - Perimeter of squares in a rectangle
+- [5sku - Perimeter of squares in a rectangle](https://github.com/hiblacker/codewars-daily/blob/master/2019-3-28-generate-fibonacci.md)
 
 The drawing shows 6 squares the sides of which have a length of 1, 1, 2, 3, 5, 8. It's easy to see that the sum of the perimeters of these squares is : `4 * (1 + 1 + 2 + 3 + 5 + 8) = 4 * 20 = 80`
 
