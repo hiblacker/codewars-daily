@@ -1,7 +1,7 @@
 # Codewars daily
 每天一道[Codewars JavaScript](https://www.codewars.com)精选题，学习各种JavaScript骚操作。
 
-我热衷于一行代码解题，有人说可读性不强，但我更赞同：用的人多了，可读性也就强了。因此我们更应该关注代码的性能问题。
+我热衷于一行代码解题，有人说可读性不强，但我更赞同：用的人多了，可读性也就强了。
 
 # What is Codewars
 Codewars让学习编程变得非常有趣，参照游戏设计理念，他们提供积分和排名系统以及公会。他们为20多种不同语言设置了各种挑战，如果你实在做不出来，还有讨论板块可以参照其他用户的解法。你也可以查看关于每项挑战的讨论，以及用户的解法。你还能从解决挑战当中赚到分数，从而提高自己在排行榜上的排位。
@@ -21,12 +21,12 @@ Codewars让学习编程变得非常有趣，参照游戏设计理念，他们提
 # How these articles work
 1. 题干描述部分
 2. 问题拆解
-3. 我的解题思路
+3. 解题
 4. Codewars精选解
 5. 相关知识
 
 # 今日份Codewar
-- [5sku - Perimeter of squares in a rectangle](https://github.com/hiblacker/codewars-daily/blob/master/2019-3-28-generate-fibonacci.md)
+- [5sku - Perimeter of squares in a rectangle](https://github.com/hiblacker/codewars-daily/blob/master/3-generate-fibonacci.md)
 
 The drawing shows 6 squares the sides of which have a length of 1, 1, 2, 3, 5, 8. It's easy to see that the sum of the perimeters of these squares is : `4 * (1 + 1 + 2 + 3 + 5 + 8) = 4 * 20 = 80`
 

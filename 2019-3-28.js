@@ -26,9 +26,9 @@ function perimeter(n) {
  * 
  */
 const perimeterInOne = n => Array(n + 1)
-                                .fill(1)
-                                .reduce(arr => [...arr, (arr[arr.length - 1] || 1) + (arr[arr.length - 2] || 0)], [])
-                                .reduce((a, b) => a + b) * 4
+    .fill(1)
+    .reduce(arr => [...arr, (arr[arr.length - 1] || 1) + (arr[arr.length - 2] || 0)], [])
+    .reduce((a, b) => a + b) * 4
 
 console.log(perimeter(0));
 console.log(perimeter(1));
@@ -44,3 +44,19 @@ console.log(perimeterInOne(5));
 console.log(perimeterInOne(7));
 console.log(perimeterInOne(20));
 console.log(perimeterInOne(30));
+
+function encrypt(text, n) {
+    return n <= 0 || !text ?
+        text :
+        text.split('')
+        .map((i, k) => text
+            .split('')
+            .splice((Math.pow(2, n) * (k + 1) - 1) % (text.length % 2 == 0 ? text.length + 1 : text.length), 1)[0])
+        .join('') 
+}
+
+p1 = ''
+p2 = ''
+p3 = 'Y3Vyc29yOnYyOpO5MjAxOS0wMy0yOVQxNDo0MjozMCswODowMADOCbY3Jg=='
+p4 = 'Y3Vyc29yOnYyOpO5MjAxOS0wMy0yOVQxNDo0MjowNyswODowMADOCbY2wg=='
+p4 = 'Y3Vyc29yOnYyOpO5MjAxOS0wMy0yOVQxNDo0MTo0MyswODowMADOCbY2VA=='
