@@ -52,7 +52,4 @@ perimeter(30) should return 14098308
 2. 求周长
 
 
-# 往日份
-
-
 
