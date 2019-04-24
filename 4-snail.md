@@ -1,5 +1,5 @@
 # Codewars刷题升级4 - 【蜗牛排序】- 4sku - Snail Sort
-给定一个`n x n`数组，返回按顺时针方向从最外层元素排列到中间元素的数组。
+给定一个`n x n`二维数组，返回按顺时针方向从最外层元素排列到中间元素的数组。
 
 ```js
 let array = [
@@ -20,6 +20,7 @@ snail(array2) => [1,2,3,1,4,7,7,9,8,7,7,4,5,6,9,8]
 ![](http://qiniu.lanjinrong.com/d5b9a71a9b418d71a3539de5713a6220)
 
 NOTE: 其思想不是将元素从最低值排序到最高值;其思想是按照顺时针蜗牛壳模式遍历二维数组.
+
 NOTE 2: `0x0`(空矩阵)表示为`[[]]`
 
 
@@ -81,31 +82,27 @@ let snail = function (array) {
 
 
 # Codewars精选解
-看看点赞高的解，再看看自己的，我......
+看看点赞高的解，再看看自己的，我...... excuse me?
 
-## 1
 巧妙利用数组的`shift()`和`pop()`方法，`shift()`删除数组第一项并返回删除的元素，该方法会改变原数组，
 ```js
 snail = function(array) {
-  var result;
-  while (array.length) {
-    // Steal the first row.
-    result = (result ? result.concat(array.shift()) : array.shift());
-    // Steal the right items.
-    for (var i = 0; i < array.length; i++)
-      result.push(array[i].pop());
-    // Steal the bottom row.
-    result = result.concat((array.pop() || []).reverse());
-    // Steal the left items.
-    for (var i = array.length - 1; i >= 0; i--)
-      result.push(array[i].shift());
-  }
-  return result;
+    var result;
+    while (array.length) {
+        // Steal the first row.
+        result = (result ? result.concat(array.shift()) : array.shift());
+        // Steal the right items.
+        for (var i = 0; i < array.length; i++)
+        result.push(array[i].pop());
+        // Steal the bottom row.
+        result = result.concat((array.pop() || []).reverse());
+        // Steal the left items.
+        for (var i = array.length - 1; i >= 0; i--)
+        result.push(array[i].shift());
+    }
+    return result;
 }
 ```
-
-## 2
-
 
 # 本题相关知识
 1. [Array.prototype.shift()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift)
