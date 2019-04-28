@@ -26,10 +26,10 @@ Codewars让学习编程变得非常有趣，参照游戏设计理念，他们提
 5. 相关知识
 
 # 目录
-[Codewars刷题升级1 - 【正则生成电话号】- 6sku - Creat Phone Number](https://github.com/hiblacker/codewars-daily/blob/master/article/1-creat-phone-number.md)
-[Codewars刷题升级2 - 【正则生成电话号】- 6sku - Creat Phone Number](https://github.com/hiblacker/codewars-daily/blob/master/1-creat-phone-number.md)
-[Codewars刷题升级3 - 【正则生成电话号】- 6sku - Creat Phone Number](https://github.com/hiblacker/codewars-daily/blob/master/1-creat-phone-number.md)
-[Codewars刷题升级4 - 【正则生成电话号】- 6sku - Creat Phone Number](https://github.com/hiblacker/codewars-daily/blob/master/1-creat-phone-number.md)
-[Codewars刷题升级5 - 【正则生成电话号】- 6sku - Creat Phone Number](https://github.com/hiblacker/codewars-daily/blob/master/1-creat-phone-number.md)
+- [Codewars刷题升级1 - 【正则生成电话号】- 6sku - Creat Phone Number](https://github.com/hiblacker/codewars-daily/blob/master/article/1-creat-phone-number.md)
+- [Codewars刷题升级2 - 【加密解密字符串（一）】- 6sku - Alternating Split](https://github.com/hiblacker/codewars-daily/blob/master/article/2-alternating-split-series-1.md)
+- [Codewars刷题升级3 - 【生成斐波那契数列】- 5sku - Perimeter of squares in a rectangle](https://github.com/hiblacker/codewars-daily/blob/master/article/3-generate-fibonacci.md)
+- [Codewars刷题升级4 - 【蜗牛排序】- 4sku - Snail Sort](https://github.com/hiblacker/codewars-daily/blob/master/article/4-snail.md)
+- [Codewars刷题升级5 - 【解密字符串】- 4sku - Recover a secret string from random triplets](https://github.com/hiblacker/codewars-daily/blob/master/article/5-Recover%20a%20secret%20string%20from%20random%20triplets.md)
 
 
