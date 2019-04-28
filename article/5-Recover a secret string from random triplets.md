@@ -1,4 +1,4 @@
-# Codewars刷题升级5 - 【蜗牛排序】- 4sku - Recover a secret string from random triplets
+# Codewars刷题升级5 - 【解密字符串】- 4sku - Recover a secret string from random triplets
 There is a secret string which is unknown to you. Given a collection of random triplets from the string, recover the original string.
 
 A triplet here is defined as a sequence of three letters such that each letter occurs somewhere before the next in the given string. "whi" is a triplet for the string "whatisup".
@@ -50,7 +50,7 @@ var recoverSecret = function (triplets) {
 
 
 # Codewars精选解
-看了这个解，茅塞顿开。比如虽然学过解构赋值，但实际应用不多，此解就用到了：`[first]=[1,2,3]`可以取到第一个元素。还比如判断第一个字母在所有的三字母数组中都是第一个或者不存在，就用到了`tuple.indexOf(first) <= 0`，很巧妙的利用了元素不存在时返回`-1`。
+看了这个解，茅塞顿开，就是不断的找到第一个字母。比如虽然学过解构赋值，但实际应用不多，此解就用到了：`[first]=[1,2,3]`可以取到第一个元素，即`first=1`。还比如判断第一个字母在所有的三字母数组中都是第一个或者不存在，就用到了`tuple.indexOf(first) <= 0`，很巧妙的利用了元素不存在时返回`-1`。
 ```js
 // 密码的第一位一定存在并且只存在于三字母数组中的第一位，理解了这点，题就解开了
 // 比如例子'whatisup'中的'w'不会在三字母数组的第二、三位出现

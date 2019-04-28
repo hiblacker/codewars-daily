@@ -25,31 +25,11 @@ Codewars让学习编程变得非常有趣，参照游戏设计理念，他们提
 4. Codewars精选解
 5. 相关知识
 
-# 今日份Codewar
-- [5sku - Perimeter of squares in a rectangle](https://github.com/hiblacker/codewars-daily/blob/master/3-generate-fibonacci.md)
-
-The drawing shows 6 squares the sides of which have a length of 1, 1, 2, 3, 5, 8. It's easy to see that the sum of the perimeters of these squares is : `4 * (1 + 1 + 2 + 3 + 5 + 8) = 4 * 20 = 80`
-
-Could you give the sum of the perimeters of all the squares in a rectangle when there are n + 1 squares disposed in the same manner as in the drawing:
-
-![](http://qiniu.lanjinrong.com/2e5779b126aa4e91b93fbcded330c185)
-
-#Hint: See Fibonacci sequence
-
-#Ref: http://oeis.org/A000045
-
-The function perimeter has for parameter n where n + 1 is the number of squares (they are numbered from 0 to n) and returns the total perimeter of all the squares.
-```
-perimeter(5)  should return 80
-perimeter(7)  should return 216
-perimeter(20) should return 114624
-perimeter(30) should return 14098308
-```
-
-- 问题拆解
-
-1. 生成长度为n的斐波纳契数组
-2. 求周长
-
+# 目录
+[Codewars刷题升级1 - 【正则生成电话号】- 6sku - Creat Phone Number](https://github.com/hiblacker/codewars-daily/blob/master/article/1-creat-phone-number.md)
+[Codewars刷题升级2 - 【正则生成电话号】- 6sku - Creat Phone Number](https://github.com/hiblacker/codewars-daily/blob/master/1-creat-phone-number.md)
+[Codewars刷题升级3 - 【正则生成电话号】- 6sku - Creat Phone Number](https://github.com/hiblacker/codewars-daily/blob/master/1-creat-phone-number.md)
+[Codewars刷题升级4 - 【正则生成电话号】- 6sku - Creat Phone Number](https://github.com/hiblacker/codewars-daily/blob/master/1-creat-phone-number.md)
+[Codewars刷题升级5 - 【正则生成电话号】- 6sku - Creat Phone Number](https://github.com/hiblacker/codewars-daily/blob/master/1-creat-phone-number.md)
 
 
