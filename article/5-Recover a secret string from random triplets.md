@@ -30,7 +30,7 @@ var recoverSecret = function(triplets) {
 }
 ```
 
-# 解题
+## 解题
 想了很久没想到怎么解，又想看看大神解，只能作弊了。。。
 
 ```js
@@ -49,7 +49,7 @@ var recoverSecret = function (triplets) {
 ```
 
 
-# Codewars精选解
+## Codewars精选解
 看了这个解，茅塞顿开，就是不断的找到第一个字母。比如虽然学过解构赋值，但实际应用不多，此解就用到了：`[first]=[1,2,3]`可以取到第一个元素，即`first=1`。还比如判断第一个字母在所有的三字母数组中都是第一个或者不存在，就用到了`tuple.indexOf(first) <= 0`，很巧妙的利用了元素不存在时返回`-1`。
 ```js
 // 密码的第一位一定存在并且只存在于三字母数组中的第一位，理解了这点，题就解开了
@@ -70,7 +70,7 @@ var recoverSecret = function (triplets) {
 }
 ```
 
-# 本题相关知识
+## 本题相关知识
 1. [解构赋值](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 2. [Array​.prototype​.every()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/every)
 

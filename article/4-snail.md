@@ -24,11 +24,11 @@ NOTE: 其思想不是将元素从最低值排序到最高值;其思想是按照�
 NOTE 2: `0x0`(空矩阵)表示为`[[]]`
 
 
-# 问题拆解
+## 问题拆解
 1. 顺时针取最外层元素，并删除
 2. 递归至最里层
 
-# 解题
+## 解题
 看到这道题的第一眼我是懵逼的，满脑瓜问号，可以说一点思路没有，更别说一行代码解决问题了。但很多事情就是这样，多琢磨，多思考，就会得到答案。世上无难事只怕有心人，很有道理。直接贴我的一坨shit吧，当然你也可以直接跳到精选解：
 
 ```js
@@ -81,7 +81,7 @@ let snail = function (array) {
 ```
 
 
-# Codewars精选解
+## Codewars精选解
 看看点赞高的解，再看看自己的，我...... excuse me?
 
 巧妙利用数组的`shift()`和`pop()`方法，`shift()`删除数组第一项并返回删除的元素，该方法会改变原数组，
@@ -104,7 +104,7 @@ snail = function(array) {
 }
 ```
 
-# 本题相关知识
+## 本题相关知识
 1. [Array.prototype.shift()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift)
 2. [Array.prototype.pop()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)
 

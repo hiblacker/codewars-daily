@@ -17,11 +17,11 @@ perimeter(20) should return 114624
 perimeter(30) should return 14098308
 ```
 
-# 问题拆解
+## 问题拆解
 1. 生成长度为 `n` 的斐波纳契数组 `[1, 1, 2, 3, 5, 8] `
 2. 求周长 `4 * (1 + 1 + 2 + 3 + 5 + 8)`
 
-# 解题
+## 解题
 题中给出`n`的范围是[0,+∞) 所以这里不处理`n`的入参，codewars的风格就是这样，专心解题就OK，很多边缘情况不需要考虑。
 1. 生成斐波纳契数组
 ```js
@@ -74,7 +74,7 @@ console.log(perimeterInOne(5)); // 80
 console.log(perimeterInOne(20)); // 114624
 ```
 
-# Codewars精选解
+## Codewars精选解
 成功提交自己的答案后，可以浏览别人的解，有最佳实践和最骚解（clever）。
 我选了一个有意思的：
 ```js
@@ -91,7 +91,7 @@ function perimeter(n){
 
 感兴趣可以自行[谷歌](https://www.google.com/?q=斐波那契数列) 或者 [百度](https://www.baidu.com/s?wd=斐波那契数列)斐波那契数列。
 
-# 本题相关知识
+## 本题相关知识
 1. [Array.prototype.fill()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill)
 2. [Array.prototype.reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
 3. [`=>` 箭头函数](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)

@@ -9,11 +9,11 @@ Write a function that accepts an array of 10 integers (between 0 and 9), that re
 createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]) // => returns "(123) 456-7890"
 ```
 
-# 问题拆解
+## 问题拆解
 1. 将数组转化为字符串
 2. 正则替换`(***) ***-****`
 
-# 解题
+## 解题
 1. `String.prototype.replace()`方法中的第二个参数可以使用 `$n` 来插入匹配的第 `n` 个括号匹配的字符串。**注意：**
 
     - 需要第一个参数为[RegExp](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/RegExp)对象。
@@ -30,7 +30,7 @@ function createPhoneNumber(numbers){
 console.log(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0])); // "(123) 456-7890"
 ```
 
-# Codewars精选解
+## Codewars精选解
 成功提交自己的答案后，可以浏览别人的解，有最佳实践和最骚解（clever）。
 
 - 这个是最佳实践票数最高的：
@@ -53,7 +53,7 @@ function createPhoneNumber(numbers){
 }
 ```
 
-这个解跟我的解类似,但兼容性更高。骚气指数三颗星吧。
+我的解跟这个解类似，但此解兼容性更高一些。
 
 - 最后看看WTF解：
 
@@ -75,12 +75,12 @@ Some might say this isn't the most elegant to look at, but in my benchmark I fou
 Seems to run the fastest. Sometimes the simpler solution is the best.
 ```
 
-好吧，虽然代码不是很优雅，但很多网友说这是最快的代码。
+好吧，代码不是很优雅，不过有网友说这是最快的代码。
 
-我保持沉默，就好像虽然C比Java快很多，但Java还是实用性强一些，毕竟0.01s跟0.0001s的差距我们是可以接受的。
+但很多时候，语义、可读性、编码体验更重要，难道因为`for`循环效率更高，我们就不去使用`map`、`forEach`了吗？不要陷入过分追求性能的误区。
 
 
-# 本题相关知识
+## 本题相关知识
 1. [String.prototype.replace()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
 2. [String.prototype.substring()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/substring)
 3. [正则表达式](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions)
