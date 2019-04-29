@@ -52,7 +52,7 @@ function encrypt(text, n) {
         .map((i, k) => text
             .split('')
             .splice((Math.pow(2, n) * (k + 1) - 1) % (text.length % 2 == 0 ? text.length + 1 : text.length), 1)[0])
-        .join('') 
+        .join('')
 }
 
 p1 = ''
